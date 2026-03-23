@@ -1,0 +1,16 @@
+name: artifacts-practise
+on: [push]
+
+jobs:
+  artifact-practise:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create file
+        run: echo "hello" > file.txt
+
+      - name: upload articats
+        uses: actions/upload-artifact@v4
+
+        with:
+          name: my-file
+          path: file.txt
