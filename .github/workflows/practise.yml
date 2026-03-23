@@ -1,0 +1,21 @@
+name: practise multiple jobs
+on: [push]
+jobs:
+  practise:
+    runs-on: ubuntu-latest
+    steps:
+      uses: actions/checkout@v4
+      - name: list
+        run: ls -lrt
+      - name: current directory
+        run: pwd
+  job 2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check disk space
+        run: df -h
+  job 3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check hostname
+        run: hostanme
