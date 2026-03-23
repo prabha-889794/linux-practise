@@ -1,0 +1,10 @@
+name: checkout
+on: [push] 
+jobs:
+  checkout-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkouy
+        uses: actions/checkout@v4
+      - name: list the files
+        run: ls -lrth
