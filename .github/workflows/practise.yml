@@ -1,21 +1,24 @@
 name: practise multiple jobs
 on: [push]
+
 jobs:
   practise:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v4
+      - uses: actions/checkout@v4  # Added the dash '-' here
       - name: list
         run: ls -lrt
       - name: current directory
         run: pwd
-  job 2:
+
+  job-2:                           # Changed space to a hyphen
     runs-on: ubuntu-latest
     steps:
       - name: check disk space
         run: df -h
-  job 3:
+
+  job-3:                           # Changed space to a hyphen
     runs-on: ubuntu-latest
     steps:
       - name: check hostname
-        run: hostanme
+        run: hostname              # Fixed the typo
