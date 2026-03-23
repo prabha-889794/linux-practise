@@ -4,5 +4,5 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-      - name: test secrete
+      - name: print name
         run: echo "Hello ${{ secrets.MY_NAME }}"
