@@ -1,8 +1,9 @@
 name: secreate practise
 on: [push]
+
 jobs:
-  tests:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print name
-        run: echo "Hello ${{ secrets.MY_NAME }}"
+  tests:                 # 2 spaces
+    runs-on: ubuntu-latest # 4 spaces
+    steps:               # 4 spaces
+      - name: print name # 6 spaces (The dash '-' counts as a space!)
+        run: echo "Hello ${{ secrets.MY_NAME }}" # 8 spaces
