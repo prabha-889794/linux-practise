@@ -1,0 +1,11 @@
+name: PR check
+on: 
+  pull_request:
+    branches:
+      - main
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run tests
+        run: echo "Code is being checked before merging!"
