@@ -7,6 +7,6 @@ jobs:
       - name: nginx installtion
         run: sudo apt install nginx -y
       - name: check start the service
-        run: systemctl start nginx
+        run: sudo systemctl start nginx
       - name: check the status
-        run: systemctl status nginx
+        run: sudo systemctl status nginx
