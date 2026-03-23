@@ -1,0 +1,13 @@
+name: linux practise
+on: [push]
+jobs:
+  my-first-job:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: list the files
+      run: ls -lrt
+    - name: show current diretory
+      run: pwd
+    - name: check disk
+      run: df -h
