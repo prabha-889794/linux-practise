@@ -1,0 +1,12 @@
+name: nginx test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: nginx installtion
+        run: sudo apt install nginx -y
+      - name: check start the service
+        run: systemctl start nginx
+      - name: check the status
+        run: systemctl status nginx
